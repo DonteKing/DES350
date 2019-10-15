@@ -1,0 +1,579 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+</head>
+
+	
+	<style>
+		
+		.head { position:absolute;
+			top:0px;
+			left:35px;
+			background:#333;
+			padding: 20px;
+			margin:10px;
+			width:400px;
+			height:360px;
+			border-radius: 400px;
+			background-color: #EAD7BE}
+	
+	
+		
+	.leftear { position:absolute;
+			top:0px;
+			left:0px;
+			background:#333;
+			padding: 20px;
+			margin:10px;
+			width:175px;
+			height:175px;
+			border-radius: 175px;
+			background-color:black;
+		z-index: -2;}
+		
+	.rightear { position:absolute;
+			top:0px;
+			left:300px;
+			background:#333;
+			padding: 20px;
+			margin:10px;
+			width:175px;
+			height:175px;
+			border-radius: 175px;
+			background-color:black;
+		z-index: -2;}
+	
+	
+		
+		
+	.lefteye { position:absolute;
+			top:120px;
+			left:120px;
+			background:#333;
+			padding: 20px;
+			margin:10px;
+			width:30px;
+			height:30px;
+			border-radius: 175px;
+			background-color:black;}
+		.lefteyebrown { position:absolute;
+			top:127px;
+			left:127px;
+			background:#333;
+			padding: 20px;
+			margin:10px;
+			width:17px;
+			height:17px;
+			border-radius: 175px;
+			background-color: #473126}
+		.lefteyeblack { position:absolute;
+			top:131px;
+			left:132px;
+			background:#333;
+			padding: 20px;
+			margin:10px;
+			width:10px;
+			height:10px;
+			border-radius: 175px;
+			background-color: black}
+		.lefteyewhite { position:absolute;
+			top:142px;
+			left:173px;
+			background:#333;
+			padding: 0px;
+			margin:0px;
+			width:15px;
+			height:15px;
+			border-radius: 175px;
+			background-color: white}
+		
+	.righteye { position:absolute;
+			top:120px;
+			left:303px;
+			background:#333;
+			padding: 20px;
+			margin:10px;
+			width:30px;
+			height:30px;
+			border-radius: 175px;
+			background-color:black;}
+		.righteyebrown { position:absolute;
+			top:127px;
+			left:310px;
+			background:#333;
+			padding: 20px;
+			margin:10px;
+			width:17px;
+			height:17px;
+			border-radius: 50px;
+			background-color: #473126}
+		.righteyeblack { position:absolute;
+			top:130px;
+			left:312px;
+			background:#333;
+			padding: 20px;
+			margin:10px;
+			width:10px;
+			height:10px;
+			border-radius: 50px;
+			background-color: black}
+		.righteyewhite { position: absolute;
+			top:142px;
+			left:328px;
+			background:#333;
+			padding: 0px;
+			margin:0px;
+			width:15px;
+			height:15px;
+			border-radius: 30px;
+			background-color: white}
+		
+		.nose { position: absolute;
+			top:275px;
+			left:215px;
+			background:#333;
+			padding: 0px;
+			margin:0px;
+			width:100px;
+			height:85px;
+			border-radius: 100px;
+			background-color: black}
+		
+		
+		
+	.moon1 {position:absolute;
+		top: 148px;
+		left: 85px;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        box-shadow: 15px 15px 0 0 #EAD7BE;
+		transform: rotate(180deg);
+		zoom:2;
+		
+		
+    }
+  .moon2 {position:absolute;
+		top: 148px;
+		left:100px;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      box-shadow: 15px 15px 0 0 #EAD7BE;
+		transform: rotate(-90deg);
+		zoom:2;
+		
+    }
+		
+	.moon3 {position:absolute;
+		top: 300px;
+		left: 215px;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        box-shadow: 15px 15px 0 0 #EAD7BE;
+		transform: rotate(180deg);
+		zoom:1;
+		
+		
+    }	
+	.moon4 {position:absolute;
+		top: 300px;
+		left:235px;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      box-shadow: 15px 15px 0 0 #EAD7BE;
+		transform: rotate(-90deg);
+		zoom:1;
+    }
+	.moon5{position:absolute;
+		top: 110px;
+		left: 45px;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        box-shadow: 15px 15px 0 0 #EAD7BE;
+		transform: rotate(180deg);
+		zoom:2.5;}
+	
+		
+		.moon6 {position:absolute;
+		top: 110px;
+		left: 85px;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        box-shadow: 15px 15px 0 0 #EAD7BE;
+		transform: rotate(-90deg);
+		zoom:2.5;
+			 
+		
+    }
+	
+		
+	.moon7 {position:absolute;
+		top: 115px;
+		left:55px;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      box-shadow: 15px 15px 0 0 #EAD7BE;
+		transform: rotate(180deg);
+	
+		zoom:2.5
+			;
+	 }
+	.moon8 {position:absolute;
+		top: 115px;
+		left:75px;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      box-shadow: 15px 15px 0 0 #EAD7BE;
+		transform: rotate(-90deg);
+	
+		zoom:2.5
+			;
+	 }
+	.moon9 {position:absolute;
+		top: 80px;
+		left:30px;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      box-shadow: 15px 15px 0 0 #EAD7BE;
+		transform: rotate(180deg);
+	
+		zoom:3
+			;
+	 }
+	.moon10 {position:absolute;
+		top:80px;
+		left:65px;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      box-shadow: 15px 15px 0 0 #EAD7BE;
+	transform: rotate(-90deg);
+	
+		zoom:3;
+		
+    }
+	
+	
+	.moon11 {position:absolute;
+		top: 10px;
+		left:20px;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      box-shadow: 15px 15px 0 0 #68483A;
+		transform: rotate(180deg);
+		z-index: -1;
+		zoom:2
+			;
+	 }
+.moon12 {position:absolute;
+		top:13px;
+		left:160px;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      box-shadow: 15px 15px 0 0 #68483A;
+	transform: rotate(-90deg);
+	z-index: -1;
+		zoom:2;
+		
+    }
+	
+	
+	.moon13 {position:absolute;
+		top: 15px;
+		left:30px;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      box-shadow: 15px 15px 0 0 #68483A;
+		transform: rotate(180deg);
+		z-index: -1;
+		zoom:2.5
+			;
+	 }
+.moon14 {position:absolute;
+		top:15px;
+		left:100px;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      box-shadow: 15px 15px 0 0 #68483A;
+	transform: rotate(-90deg);
+	z-index: -1;
+	zoom:2.5;}
+	
+	.moon15 {position:absolute;
+		top: 30px;
+		left:15px;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      box-shadow: 15px 15px 0 0 #68483A;
+		transform: rotate(180deg);
+		z-index: -1;
+		zoom:2
+			;
+	 }
+.moon16 {position:absolute;
+		top:30px;
+		left:170px;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      box-shadow: 15px 15px 0 0 #68483A;
+	transform: rotate(-90deg);
+	z-index: -1;
+	zoom:2;}
+	
+	
+	.moon17 {position:absolute;
+		top: 50px;
+		left:15px;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      box-shadow: 15px 15px 0 0 #68483A;
+		transform: rotate(180deg);
+		z-index: -1;
+		zoom:2
+			;
+	 }
+.moon18 {position:absolute;
+		top:30px;
+		left:180px;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      box-shadow: 15px 15px 0 0 #68483A;
+	transform: rotate(-90deg);
+	z-index: -1;
+	zoom:2;}
+	
+	
+	
+	.moon19 {position:absolute;
+		top: 20px;
+		left:1px;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      box-shadow: 15px 15px 0 0 #68483A;
+		transform: rotate(180deg);
+		z-index: -1;
+		zoom:2
+			;
+	 }
+
+		.moon20 {position:absolute;
+		top:25px;
+		left:180px;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      box-shadow: 15px 15px 0 0 #68483A;
+	transform: rotate(-90deg);
+	z-index: -1;
+			zoom:2;}
+	
+	
+	.moon21 {position:absolute;
+		top: 2px;
+		left:40px;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      box-shadow: 15px 15px 0 0 #EAD7BE;
+		transform: rotate(180deg);
+		z-index: -1;
+		zoom:2.5
+			;
+	 }
+
+		.moon22 {position:absolute;
+		top:2px;
+		left:90px;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      box-shadow: 15px 15px 0 0 #EAD7BE;
+	transform: rotate(-90deg);
+	z-index: -1;
+			zoom:2.5;}
+	
+		.moon23 {position:absolute;
+		top: -5px;
+		left:40px;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      box-shadow: 15px 15px 0 0 #EAD7BE;
+		transform: rotate(180deg);
+		z-index: -1;
+		zoom:2.5
+			;
+	 }
+
+		.moon24 {position:absolute;
+		top:-5px;
+		left:90px;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      box-shadow: 15px 15px 0 0 #EAD7BE;
+	transform: rotate(-90deg);
+	z-index: -1;
+			zoom:2.5;}
+		
+		.moon25 {position:absolute;
+		top: -10px;
+		left:40px;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      box-shadow: 15px 15px 0 0 #EAD7BE;
+		transform: rotate(180deg);
+		z-index: -1;
+		zoom:2.5
+			;
+	 }
+
+		.moon26 {position:absolute;
+		top:-10px;
+		left:90px;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      box-shadow: 15px 15px 0 0 #EAD7BE;
+	transform: rotate(-90deg);
+	z-index: -1;
+			zoom:2.5;}
+	
+		.full {position: absolute;
+			margin-top:10%;
+			margin-left: 30%;}
+		
+		.leftearmotion {position: absolute;
+animation-name: leftearmotion;
+animation-duration: 5s;
+animation-delay: 0s;
+animation-iteration-count: infinite;}
+		
+		@-webkit-keyframes leftearmotion  {
+			0% {top:0px;
+				left:0px;}
+			
+			25%{top:0px;
+				left:0px;}
+			
+			50%{top:50px;
+				left:0px;}
+			
+			75%{top:50px;
+				left:0px;}
+			
+			100%{top:0px;
+				left:0px;}
+		}
+	
+	</style>
+	
+<body>
+	
+	<div class="full">
+	
+	
+	
+	
+	
+	<div class="head"></div>
+	
+	<div class="lefteyecircle"></div>	
+	
+		<div class="lefteye"></div>
+				<div class="lefteyebrown"></div>
+							<div class="lefteyeblack"></div>
+										<div class="lefteyewhite"></div>
+	
+	<div class="righteyecircle"></div>
+	
+	<div class="righteye"></div>
+				<div class="righteyebrown"></div>
+							<div class="righteyeblack"></div>
+										<div class="righteyewhite"></div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="leftearmotion">
+		
+	<div class="leftear"></div>	
+	<div class="rightear"></div>
+		
+		
+		
+		<div class="moon1"></div>
+	<div class="moon2"></div>
+	<div class="moon3"></div>
+	<div class="moon4"></div>
+	<div class="moon5"></div>
+	<div class="moon6"></div>
+	<div class="moon7"></div>
+	<div class="moon8"></div>
+	<div class="moon9"></div>
+	<div class="moon10"></div>
+	
+		<div class="moon11"></div>
+	<div class="moon12"></div>
+	<div class="moon13"></div>
+	<div class="moon14"></div>
+	<div class="moon15"></div>
+	<div class="moon16"></div>
+	<div class="moon17"></div>
+	<div class="moon18"></div>
+	<div class="moon19"></div>
+	<div class="moon20"></div>
+	
+	<div class="moon21"></div>
+	<div class="moon22"></div>
+	<div class="moon23"></div>
+	<div class="moon24"></div>
+	<div class="moon25"></div>
+	<div class="moon26"></div>
+		
+		
+		</div>
+	
+	
+	
+	
+	<div class="moon27"></div>
+	<div class="moon28"></div>
+	<div class="moon29"></div>
+	<div class="moon30"></div>
+	
+	
+	<div class="lefteyecircle"></div>
+		
+	<div clss="righteyecircle"></div>
+	
+	
+	<div class="nose"></div>
+	
+	</div>
+	
+</body>
+</html>
