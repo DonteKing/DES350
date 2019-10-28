@@ -10,15 +10,34 @@ a:link {
 a:visited {
     text-decoration: none;
 }
-a:hover {color:red;
+a:hover {
+	color:#545353;
 	font-size:  25pt;
-    text-decoration: none;
+	
+	text-decoration: none;
+	
+  -webkit-animation: mymove 3s;  /* Safari 4.0 - 8.0 */
+  -webkit-animation-fill-mode: infinite; /* Safari 4.0 - 8.0 */
+  animation: mymove 3s;
+  animation-fill-mode: infinite;
+	animation-iteration-count:infinite;
+	animation-duration: infinite;
+	animation-play-state:;
 }
-a:active {
-    text-decoration: none;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    }
 
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mymove {
+  from {top: 0px;}
+  to {top: 0px; color:lightcoral;}
+}
+
+@keyframes mymove {
+  from {top: 0px;}
+  to {top: 0px; color:red;}
+}
+	}
+	
+	
 </style>
 </head>
 
@@ -121,7 +140,8 @@ a:active {
 			height:4px;
 		z-index: -1}
 		
-		a{z-index: -2;
+		a{
+			z-index: -2;
 			color:#545353;
 			}
 		
@@ -241,7 +261,7 @@ a:active {
 	
 <div class="Final">Glacier Poster</div>
 	<div class="blank7"></div>
-<div class="Final1"><a href="PosterSketches.jpg" target="-self">Poster Sketches</a></div>	
+<div class="Final1"><a href="PosterSketches.jpg" target="-self">Poster Sketches</a> / <a href="PosterSketches.jpg" target="-self">Illustrated Poster</a></div>	
 	
 	
 <div class="Portfolio">Portfolio Examples</div>
