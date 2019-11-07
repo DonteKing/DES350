@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Poster</title>
+</head>
+
+	
+	
+	<style>
+	
+		body {background-color:aqua;
+			  margin:0px; padding:0px;}
+	
+		.card {
+			position:absolute;
+			left:50%;
+			top:50%;
+			transform: translate(-50%, -50%);
+			width:40%;
+			height:90vh;
+			background: url("NationalPark.jpg") no-repeat center;
+			background-size: contain;
+		}
+		
+		.card:hover {background: url("AnimatedPoster.gif") no-repeat center;
+					 background-size: contain;}
+	
+		#preload {
+			background; url("AnimatedPoster.gif") no-repeat -9999px -9999px
+		}
+	
+	</style>
+	
+<body>
+	
+	<div class="card"></div>
+	
+	<div id="preload"></div>
+	<div class="card"></div>
+	
+</body>
+</html>
