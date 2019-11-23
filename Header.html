@@ -1,0 +1,229 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+	<link href="https://fonts.googleapis.com/css?family=Vollkorn&display=swap" rel="stylesheet">
+<title>Untitled Document</title>
+
+	
+	<style>
+	
+		html {background-color:#8A862D;
+				}
+		
+		.blank {background-color:#8A862D; width:100%; height:100px; z-index:500; margin-top:-5%; position:absolute; z-index-800;
+			display: inline-block}
+		
+		.trees {margin-top:-67.1%}
+		
+		.stones {}
+		
+		.river {margin-top:-67.1%}
+		
+		
+		
+		
+		
+		.Visit{font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif"; font-size: 50pt; font-weight:500; z-index:800;
+			margin-left:2%; margin-top:10%; position: absolute; display: inline-block; 
+				  color: white;
+		}
+		
+		h1 {font-family: 'Vollkorn', serif; font-size: 195pt; margin-left: 0%; color:white; margin-top:-32%; z-index:100; 
+			position: absolute;
+			}
+		
+		h2 {font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif"; font-size: 53pt; margin-left: 46.8%; z-index:100;
+			margin-top:-22%; margin-bottom: 30%; color:white; position: absolute;}
+		
+		
+		body {
+			background-color:#8A862D;
+			font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+			line-height: 1.4em;
+			margin-left: 10%;
+			margin-right:10%;
+			margin-top:5%;
+			height:2800px;
+		}
+		
+		.ArrowD {font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif"; font-size: 53pt; margin-left: 40.5%; z-index:300; margin-top:-14%; margin-bottom: 30%; collor:white}
+		
+		.About {font-family: 'Vollkorn', serif; font-size: 36pt; font-weight: 600;
+				margin-left:30%; margin-top:-15%; color:white;
+				width:15%;}
+		
+		.Location{font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif"; font-size: 11pt; font-weight:500; 
+					margin-top:-3%; margin-right: 30%; float:right; color:white;
+					width:20%;
+			}
+		
+		.LonLat {font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif"; font-size: 9pt; color:white;
+				width:20%; float:right; margin-right:30%; }
+		
+		.Squaremiles {font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif"; font-size: 9pt; color:white;
+						margin-left: 68.5%;  margin-bottom:; margin-top:-1.7%; float:left;
+						width:15%;}
+		
+		.Details {font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif"; font-size: 9pt; color:white;
+			width:26%; margin-left:50%; margin-right:11%; margin-top:3%}
+		
+		
+		.Act {font-family: 'Vollkorn', serif; font-size: 36pt; font-weight: 600; color:white;
+				margin-left:10%; margin-top:6%; margin-bottom: 3%;
+				width:15%;}
+		
+		.Box1 {
+			display:inline-block;
+			background:#ddd;
+			text-align:  center;
+			line-height: 205px;
+			width:115px;
+			margin-left:10%;
+			margin-right: 11%;
+			margin-bottom: 5%;
+			height:115px;
+			border-radius: 9px;
+			z-index:;
+		}
+		
+		.Box2 {
+			display:inline-block;
+			background:#ddd;
+			text-align:  center;
+			line-height: 205px;
+			width:115px;
+			margin-left:-6%;
+			margin-right: 11%;
+			margin-bottom: 5%;
+			height:115px;
+			border-radius: 9px;
+			z-index:;
+		}
+		.Box3 {
+			display:inline-block;
+			background:#ddd;
+			text-align:  center;
+			line-height: 205px;
+			width:115px;
+			margin-left:-6%;
+			margin-right: 11%;
+			margin-bottom: 5%;
+			height:115px;
+			border-radius: 9px;
+			z-index:;
+		}
+		.Box4 {
+			display:inline-block;
+			background:#ddd;
+			text-align:  center;
+			line-height: 205px;
+			width:115px;
+			margin-left:-6%;
+			margin-right: 11%;
+			margin-top:-4%;
+			margin-bottom: 5%;
+			height:115px;
+			border-radius: 9px;
+			z-index:;
+		}
+		
+		.Box5 {
+			display:inline-block;
+			background:#ddd;
+			text-align:  center;
+			line-height: 205px;
+			width:115px;
+			margin-left:-6%;
+			margin-right: 11%;
+			margin-top:-10%;
+			margin-bottom: 5%;
+			height:115px;
+			border-radius: 9px;
+			z-index:;
+		}
+		
+		.ArrowD2 {font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif"; font-size: 53pt; margin-left: 40.5%; 
+			margin-top:15%; margin-bottom: 30%;}
+		
+		
+		.Parks {font-family: 'Vollkorn', serif; font-size: 36pt; font-weight: 600; color: white;
+				margin-left:10%; margin-top:-15%; margin-bottom: 3%;
+				width:50%;}
+		
+		
+		
+		.squareElement {
+			display:inline-block;
+			float:left;
+			background:#ddd;
+			text-align:  center;
+			line-height: 205px;
+			width:29%;
+			margin-right: 1%;
+			margin-bottom: 5%;
+			height:405px;
+			border-radius: 9px;
+			z-index: -2;
+		}
+	
+		.background-square {
+			position: absolute;
+			width:600px;
+			height:600px;
+			background:#00F1C9;
+			border-radius: 12px;
+			z-index: -1;
+			margin-top -80px;
+			margin-left: -60px;
+			
+		}
+		
+	
+	
+	
+	
+	
+	</style>
+	
+	
+	
+	
+	</head>
+
+	
+	
+	
+<body>
+	
+	<div class="Visit">Visit</div>
+	<div class="blank"></div>
+	<div class="stones rellax" data-rellax-speed="5"><img src="STONES-01.svg" alt=""/></div>
+	<div class="river rellax" data-rellax-speed="3"><img src="RIVER-01.svg" alt=""/></div>
+	<div class="trees rellax" data-rellax-speed="1"><img src="Trees.svg" alt=""/></div>
+	
+	
+	
+	
+	<h1>GLACIER</h1>
+	<h2>National Park</h2>
+
+	
+	
+
+	
+<!-- javascript by Dixon and Moe: https://github.com/dixonandmoe/rellax -->
+<script type="text/javascript" src="../Parallax/rellax.js"></script>
+<script>
+    	var rellax = new Rellax('.rellax', {
+        // center: true
+        callback: function(position) {
+            // callback every position change
+            console.log(position);
+        }
+      });
+    </script>
+	 
+	
+</body>
+</html>
