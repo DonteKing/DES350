@@ -1,0 +1,280 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+	<link href="https://fonts.googleapis.com/css?family=Vollkorn&display=swap" rel="stylesheet">
+<title>Untitled Document</title>
+
+	
+	<style>
+	
+		html {background-color:#38571C;
+				}
+		
+		.blank {background-color:#38571C; width:100%; height:100px; z-index:500; margin-top:-5%; position:absolute; z-index-800;
+			display: inline-block}
+		
+		.trees {margin-top:-67.1%}
+		
+		.stones {}
+		
+		.river {margin-top:-67.1%}
+		
+		
+		
+		
+		
+		.Visit{font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif"; font-size: 50pt; font-weight:500; z-index:800;
+			margin-left:2%; margin-top:10%; position: absolute; display: inline-block; 
+				  color: white;
+		}
+		
+		h1 {font-family: 'Vollkorn', serif; font-size: 195pt; margin-left: 0%; color:white; margin-top:-32%; z-index:100; 
+			position: absolute;
+			}
+		
+		h2 {font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif"; font-size: 53pt; margin-left: 46.8%; z-index:100;
+			margin-top:-22%; margin-bottom: 30%; color:white; position: absolute;}
+		
+		
+		body {
+			background-color:#38571C;
+			font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+			line-height: 1.4em;
+			margin-left: 10%;
+			margin-right:10%;
+			margin-top:5%;
+			height:2800px;
+		}
+		
+		.ArrowD {font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif"; font-size: 53pt; margin-left: 40.5%; z-index:300; margin-top:-14%; margin-bottom: 30%; collor:white}
+		
+		.About {font-family: 'Vollkorn', serif; font-size: 36pt; font-weight: 600;
+				margin-left:30%; margin-top:-10%; color:white;
+				width:50%;}
+		
+		.Location{font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif"; font-size: 11pt; font-weight:500; 
+					margin-top:-3%; margin-right: 30%; float:right; color:white;
+					width:20%;
+			}
+		
+		.LonLat {font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif"; font-size: 9pt; color:white;
+				width:20%; float:right; margin-right:30%; }
+		
+		.Squaremiles {font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif"; font-size: 9pt; color:white;
+						margin-left: 68.5%;  margin-bottom:; margin-top:-1.7%; float:left;
+						width:15%;}
+		
+		.Details {font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif"; font-size: 9pt; color:white;
+			width:26%; margin-left:50%; margin-right:11%; margin-top:3%}
+		
+		
+		.Act {font-family: 'Vollkorn', serif; font-size: 36pt; font-weight: 600; color:white;
+				margin-left:10%; margin-top:6%; margin-bottom: 3%;
+				width:15%;}
+		
+		.Box1 {
+			display:inline-block;
+			background:#ddd;
+			text-align:  center;
+			line-height: 205px;
+			width:115px;
+			margin-left:10%;
+			margin-right: 11%;
+			margin-bottom: 5%;
+			height:115px;
+			border-radius: 9px;
+			z-index:;
+		}
+		
+		.Box2 {
+			display:inline-block;
+			background:#ddd;
+			text-align:  center;
+			line-height: 205px;
+			width:115px;
+			margin-left:-6%;
+			margin-right: 11%;
+			margin-bottom: 5%;
+			height:115px;
+			border-radius: 9px;
+			z-index:;
+		}
+		.Box3 {
+			display:inline-block;
+			background:#ddd;
+			text-align:  center;
+			line-height: 205px;
+			width:115px;
+			margin-left:-6%;
+			margin-right: 11%;
+			margin-bottom: 5%;
+			height:115px;
+			border-radius: 9px;
+			z-index:;
+		}
+		.Box4 {
+			display:inline-block;
+			background:#ddd;
+			text-align:  center;
+			line-height: 205px;
+			width:115px;
+			margin-left:-6%;
+			margin-right: 11%;
+			margin-top:-4%;
+			margin-bottom: 5%;
+			height:115px;
+			border-radius: 9px;
+			z-index:;
+		}
+		
+		.Box5 {
+			display:inline-block;
+			background:#ddd;
+			text-align:  center;
+			line-height: 205px;
+			width:115px;
+			margin-left:-6%;
+			margin-right: 11%;
+			margin-top:-10%;
+			margin-bottom: 5%;
+			height:115px;
+			border-radius: 9px;
+			z-index:;
+		}
+		
+		.ArrowD2 {font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif"; font-size: 53pt; margin-left: 40.5%; 
+			margin-top:15%; margin-bottom: 30%;}
+		
+		
+		.Parks {font-family: 'Vollkorn', serif; font-size: 36pt; font-weight: 600; color: white;
+				margin-left:10%; margin-top:-15%; margin-bottom: 3%;
+				width:50%;}
+		
+		
+		
+		.squareElement {
+			display:inline-block;
+			float:left;
+			background:#ddd;
+			text-align:  center;
+			line-height: 205px;
+			width:29%;
+			margin-right: 1%;
+			margin-bottom: 5%;
+			height:405px;
+			border-radius: 9px;
+			z-index: -2;
+		}
+	
+		.background-square {
+			position: absolute;
+			width:600px;
+			height:600px;
+			background:#00F1C9;
+			border-radius: 12px;
+			z-index: -1;
+			margin-top -80px;
+			margin-left: -60px;
+			
+		}
+		
+	
+	
+	
+	
+	
+	</style>
+	
+	
+	
+	
+	</head>
+
+	
+	
+	
+<body>
+	
+	<div class="Visit">Visit</div>
+	<div class="blank"></div>
+	<div class="stones rellax" data-rellax-speed="4"><img src="STONES-01.svg" alt=""/></div>
+	<div class="river rellax" data-rellax-speed="4"><img src="RIVER-01.svg" alt=""/></div>
+	<div class="trees rellax" data-rellax-speed="1"><img src="Trees.svg" alt=""/></div>
+	
+	
+	
+	
+	<h1>GLACIER</h1>
+	<h2>National Park</h2>
+<div class="ArrowD"><img src="ArrowDown.png" width="80" height="30" alt=""/></div>
+	
+	
+<div class="About">About</div>
+	<div class="Location">NorthWestern Montana</div>
+	<div class="LonLat">LON: 48.7595 N  /  LAT: 11.7870 W</div>
+	<div class="Squaremiles">16,000 Sq. Miles</div>
+<div class="Details">The mountains of Glacier National Park began forming 170 million years ago when ancient rocks were forced eastward up and over much younger rock strata. Known as the Lewis Overthrust, these sedimentary rocks are considered to have some of the finest examples of early life fossils on Earth.<br> <br>
+
+The current shapes of the Lewis and Livingston mountain ranges and positioning and size of the lakes show the telltale evidence of massive glacial action, which carved U-shaped valleys and left behind moraines which impounded water, creating lakes. <br> <br>
+
+Of the estimated 150 glaciers which existed in the park in the mid-19th century during the late Little Ice Age, only 25 active glaciers remained by 2010. Scientists studying the glaciers in the park have estimated that all the active glaciers may disappear by 2030 if current climate patterns persist</div>
+	
+
+<div class="Act">Activities</div>
+<div class="ActiveBox">
+		
+	<div class="Box1 rellax" data-rellax-speed="0">Number 1</div>
+	<div class="Box2 rellax" data-rellax-speed="0">Number 2</div>
+	<div class="Box3 rellax" data-rellax-speed="0">Number 3</div>
+	<div class="Box4 rellax" data-rellax-speed="0">Number 4</div>
+	<div class="Box5 rellax" data-rellax-speed="0">Number 5</div>
+	</div>
+		
+<div class="ArrowD2"><img src="ArrowDown.png" width="80" height="30" alt=""/></div>
+
+	
+	
+<div class="Parks">More Parks To Experience</div>
+	
+	
+<div class="squareElement">Number 1</div>
+<div class="squareElement">Number 2</div>
+<div class="squareElement">Number 3</div>
+	
+	
+<div class="squareElement rellax" data-rellax-speed="5">Number 1</div>
+<div class="squareElement rellax" data-rellax-speed="3">Number 2</div>
+<div class="squareElement rellax" data-rellax-speed="2">Number 3</div>
+
+	
+<div class="squareElement">Number 1</div>
+<div class="squareElement">Number 2</div>
+<div class="squareElement">Number 3</div>
+	
+	
+	<div class="background-square rellax" data-rellax-speed="-5"></div>
+	
+	</div>
+	
+<!-- javascript by Dixon and Moe: https://github.com/dixonandmoe/rellax -->
+<script type="text/javascript" src="../Parallax/rellax.js"></script>
+<script>
+    	var rellax = new Rellax('.rellax', {
+        // center: true
+        callback: function(position) {
+            // callback every position change
+            console.log(position);
+        }
+      });
+    </script>
+	 
+	
+	
+	
+	
+	
+	
+	
+</body>
+</html>
